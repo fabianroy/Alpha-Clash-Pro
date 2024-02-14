@@ -13,6 +13,11 @@ function setBackgroundColorById(elelementId){
     element.classList.add('bg-orange-400');
 }
 
+function removeBackgroundColorById(elelementId){
+    let element = document.getElementById(elelementId);
+    element.classList.remove('bg-orange-400');
+}
+
 function getARandomAlphabet() {
     let alphabetsString = "abcdefghijklmnopqrstuvwxyz";
     let alphabets = alphabetsString.split('');
