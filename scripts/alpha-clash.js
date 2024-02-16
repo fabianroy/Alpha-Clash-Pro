@@ -11,3 +11,9 @@ function play(){
     showElementById('playground-section');
     continueGame();
 }
+
+function handleKeyboardButtonPress(){
+    console.log('Key pressed');
+}
+
+document.addEventListener('keyup', handleKeyboardButtonPress);
