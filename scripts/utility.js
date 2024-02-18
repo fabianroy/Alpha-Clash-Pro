@@ -8,26 +8,32 @@ function showElementById(elelementId) {
     element.classList.remove('hidden');
 }
 
-function setBackgroundColorById(elelementId){
+function setBackgroundColorById(elelementId) {
     let element = document.getElementById(elelementId);
     element.classList.add('bg-orange-400');
 }
 
-function removeBackgroundColorById(elelementId){
+function removeBackgroundColorById(elelementId) {
     let element = document.getElementById(elelementId);
     element.classList.remove('bg-orange-400');
 }
 
-function getTextElementValueById(elelementId){
+function getTextElementValueById(elelementId) {
     let element = document.getElementById(elelementId);
     let elementValueText = element.innerText;
     let value = parseInt(elementValueText);
     return value;
 }
 
-function setTextElementValueById(elelementId, value){
+function setTextElementValueById(elelementId, value) {
     let element = document.getElementById(elelementId);
     element.innerText = value;
+}
+
+function getElementTextById(elelementId) {
+    let element = document.getElementById(elelementId);
+    let elementValueText = element.innerText;
+    return elementValueText;
 }
 
 function getARandomAlphabet() {

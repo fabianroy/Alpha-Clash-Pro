@@ -1,5 +1,11 @@
 function handleKeyboardButtonPress(event) {
     let playerPressed = event.key;
+
+    // Stop the game if player press ESC
+    if (playerPressed === 'Escape') {
+        gameOver();
+    }
+
     let currentAlphabetElement = document.getElementById('current-alphabet');
     let currentAlphabet = currentAlphabetElement.innerText;
     let exepectedAlphabet = currentAlphabet.toLowerCase();
@@ -56,4 +62,8 @@ function gameOver(){
     // Update final score
     let finalScore = getTextElementValueById('current-score');
     setTextElementValueById('game-score', finalScore);
+
+    // Clear the last selected alphabet highlight
+    let currentAlphabet = getElementTextById('current-alphabet');
+    removeBackgroundColorById(currentAlphabet);
 }
